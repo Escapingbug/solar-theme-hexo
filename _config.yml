@@ -1,14 +1,14 @@
 nav:
-  Home: /home/
+  Home: /
   About: /about/
   Writing: /archives/
-  Projects: http://github.com/tzvetkov75
+  Projects: https://github.com/Escapingbug
 
-projects_url: http://github.com/tzvetkov75
+projects_url: https://github.com/Escapingbug
 
 customize:
     gravatar:
-        email: 
+        email: anciety512@gmail.com
     logo:
         enabled: true
         width: 50
@@ -27,7 +27,7 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: https://github.com/tzvetkov75/solar-theme-hexo
+        github: https://github.com/Escapingbug
         twitter: /
         facebook: /
         linkedin: /
@@ -53,7 +53,7 @@ rss: false
 
 # Plugins
 plugins:
-    disqus_shortname: # Disqus Comments Shortname
+    disqus_shortname: ancyblog # Disqus Comments Shortname
     google_analytics: # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
