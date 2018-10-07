@@ -8,6 +8,7 @@ archive_path: /archives
 projects_url: https://github.com/Escapingbug
 
 customize:
+    terminal: false
     prompt: "AncyBlog $> "
     greetings: Welcome to Anciety's Blog! Type "help" or "h" for help message
     about:

@@ -1,7 +1,7 @@
 <% var global_objs = { site: site, page: page, config: config, theme: theme, _: _, path: path, url: url, env: env, body: body}; %>
 
-<% if (!path.startsWith("index")) { %>
-<%- include('normal', global_objs); %>
-<% } else { %>
+<% if (theme.customize.terminal == true && path.startsWith("index")) { %>
 <%- include('terminal', global_objs); %>
+<% } else { %>
+<%- include('normal', global_objs); %>
 <% } %>
