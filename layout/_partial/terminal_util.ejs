@@ -7,8 +7,7 @@ function util_navigate_archive() {
 }
 
 function util_print_post(content, term) {
-    console.log('util: ' + JSON.stringify(content) + term.echo);
-    var content = '<div class="content">' + content + '</div>\n';
+    //var content = '<div class="content">' + content + '</div>\n';
     term.echo(content, {raw: true});
 }
 
