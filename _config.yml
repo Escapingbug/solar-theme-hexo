@@ -1,12 +1,20 @@
 nav:
-  Home: /
-  About: /about/
-  Writing: /archives/
+  Shell: /
+  About: about/
+  Writing: /archives
   Projects: https://github.com/Escapingbug
 
+archive_path: /archives
 projects_url: https://github.com/Escapingbug
 
 customize:
+    prompt: "AncyBlog $> "
+    greetings: Welcome to Anciety's Blog! Type "help" or "h" for help message
+    about:
+        enable: true
+        path: about/
+        command: anciety
+        command_help: "who is this Anciety anyway?"
     gravatar:
         email: anciety512@gmail.com
     logo:

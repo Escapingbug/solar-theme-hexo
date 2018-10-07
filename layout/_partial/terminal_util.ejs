@@ -1,0 +1,45 @@
+<script>
+// terminal utils
+// Some util functions which needs to be configured
+
+function util_navigate_archive() {
+    window.location = "<%= url_for(theme.archive_path) %>";
+}
+
+function util_print_post(content, term) {
+    console.log('util: ' + JSON.stringify(content) + term.echo);
+    var content = '<div class="content">' + content + '</div>\n';
+    term.echo(content, {raw: true});
+}
+
+function util_print_post_error(term) {
+    term.echo('No such post\n');
+}
+
+var json_api = {
+    about: get_about_page,
+    posts: get_posts,
+    page: get_post_by_page,
+    post: get_post,
+};
+
+function get_about_page() {
+    return axios.get('api/pages/about.json');
+}
+
+function get_posts() {
+    return axios.get('api/posts.json');
+}
+
+function get_post_by_page(page) {
+    return axios.get('api/posts/' + page + '.json');
+}
+
+function get_post(num, posts) {
+    console.log('getting post now ' + JSON.stringify(posts));
+    var post_path = posts.data.data[num].path;
+    console.log('getting post: ' + post_path);
+    return axios.get(post_path);
+}
+
+</script>
